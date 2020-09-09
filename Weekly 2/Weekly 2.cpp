@@ -35,20 +35,16 @@ void task2() {
 
 void task3() {
     system("cls");
-}
 
-void task4() {
-    system("cls");
+    int counter3{ 5 };
 
-    int counter4{ 5 };
-
-    while (counter4 <= 50) {
-        std::cout << counter4 << "\n";
-        counter4 += 5;
+    while (counter3 <= 50) {
+        std::cout << counter3 << "\n";
+        counter3 += 5;
     }
 }
 
-void task5() {
+void task4() {
     system("cls");
 
     for (int i = 5; i <= 50; i += 5) {
@@ -56,18 +52,18 @@ void task5() {
     }
 }
 
-void task6() {
+void task5() {
     system("cls");
 
-    int counter6{ 5 };
+    int counter5{ 5 };
 
     do {
-        std::cout << counter6 << "\n";
-        counter6 += 5;
-    } while (counter6 <= 50);
+        std::cout << counter5 << "\n";
+        counter5 += 5;
+    } while (counter5 <= 50);
 }
 
-void task7() {
+void task6() {
     system("cls");
 
     char answer{};
@@ -76,7 +72,7 @@ void task7() {
     std::cout << "A, B, C, D, E or F?\n";
     std::cin >> answer;
 
-    switch (answer) {       // I know task 8 is to update this so it accepts upper and lower case inputs and I wasn't sure if you...
+    switch (answer) {       // I know task 7 is to update this so it accepts upper and lower case inputs and I wasn't sure if you...
     case 'a': case 'A':     // ...meant for them to be two separate tasks and I was going to make it accept both inputs anyway
         std::cout << "Outstanding!\n";
         break;
@@ -122,11 +118,10 @@ int main()
         std::cout << "Which task would you like to see?\n";
         std::cout << "1. Counter to 100\n";
         std::cout << "2. Counter from 100 to 1\n";
-        std::cout << "3. Undefined\n"; //------------------------------------------------------|Requires Weekly Task Update|---------------------------------------------------------------
-        std::cout << "4. Counter from 5 to 50 in increments of 5 (while loop)\n";
-        std::cout << "5. Counter from 5 to 50 in increments of 5 (for loop)\n";
-        std::cout << "6. Counter from 5 to 50 in increments of 5 (do while loop)\n";
-        std::cout << "7. Choose a grade for programming class\n";
+        std::cout << "3. Counter from 5 to 50 in increments of 5 (while loop)\n";
+        std::cout << "4. Counter from 5 to 50 in increments of 5 (for loop)\n";
+        std::cout << "5. Counter from 5 to 50 in increments of 5 (do while loop)\n";
+        std::cout << "6. Choose a grade for programming class\n";
 
         std::cin >> answer;
 
@@ -153,10 +148,6 @@ int main()
 
         case 6:
             task6();
-            break;
-
-        case 7:
-            task7();
             break;
 
         default:
