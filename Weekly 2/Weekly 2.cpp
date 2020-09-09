@@ -4,9 +4,9 @@
 void task1() {
     system("cls");
 
-    int counter1 = 1;
+    int counter1{ 1 };                       // Initializing variables using direct brace initialization as read on: https://www.learncpp.com/cpp-tutorial/variable-assignment-and-initialization/
 
-    std::cout << "With a while loop:\n\n";
+    std::cout << "With a while loop:\n\n";   // Using "\n" instead of "std::endl" for better performance as read on: https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/
     system("pause");
 
     while (counter1 <= 100) {
@@ -40,7 +40,7 @@ void task3() {
 void task4() {
     system("cls");
 
-    int counter4 = 5;
+    int counter4{ 5 };
 
     while (counter4 <= 50) {
         std::cout << counter4 << "\n";
@@ -59,7 +59,7 @@ void task5() {
 void task6() {
     system("cls");
 
-    int counter6 = 5;
+    int counter6{ 5 };
 
     do {
         std::cout << counter6 << "\n";
@@ -70,7 +70,7 @@ void task6() {
 void task7() {
     system("cls");
 
-    char answer;
+    char answer{};
 
     std::cout << "What grade would you like in Programming 1?\n";
     std::cout << "A, B, C, D, E or F?\n";
@@ -110,8 +110,8 @@ void task7() {
 int main()
 {
 
-    int answer;
-    char yesno;
+    int answer{};
+    char yesno{};
 
     do {
         system("cls");
